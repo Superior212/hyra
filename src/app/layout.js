@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-        <div className="md:mt-28 mt-[5rem]">
+        <div className="md:mt-28 mt-[6rem]">
           {children}
         </div>
         <Footer />
