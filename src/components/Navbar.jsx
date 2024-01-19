@@ -32,7 +32,7 @@ const Navbar = () => {
                   Our Teachings
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/about">
                 <li className="hover:border-b border-[#0802A3]">About Us</li>
               </Link>
             </ul>
@@ -93,7 +93,7 @@ const Navbar = () => {
               <Link href="/teachings">
                 <li className="list-none">Our Teachings</li>
               </Link>
-              <Link href="/">
+              <Link href="/about">
                 <li className="list-none">About Us</li>
               </Link>
               <Link href="/">
