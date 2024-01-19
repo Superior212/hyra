@@ -12,22 +12,22 @@ const Teachings = () => {
         <div className="flex flex-wrap justify-center mx-2 my-5 ">
           <TeachingCard
             title="Pillars of Islam"
-            style="border-[#0802A3] mx-3 my-3 md:my-0  rounded-md border-[1px] h-48 w-40 md:w-80 flex items-center justify-center hover:bg-[#0802A3]"
+            style="border-[#0802A3] mx-3 my-3 md:my-0  rounded-md border-[1px] h-48 w-40 md:w-80 flex items-center justify-center hover:bg-[#0802A3]  hover:text-white"
             textStyle="text-center hover:text-white font-[700] text-[#4F0101]"
           />
           <TeachingCard
             title="Articles of Faith"
-            style="border-[#0802A3] mx-3 my-4 md:my-0 rounded-md border-[1px] h-48 w-40 md:w-80 flex items-center justify-center hover:bg-[#FF7676]"
+            style="border-[#0802A3] mx-3 my-4 md:my-0 rounded-md border-[1px] h-48 w-40 md:w-80 flex items-center justify-center hover:bg-[#FF7676]  hover:text-white"
             textStyle="text-center hover:text-white font-[700] text-[#4F0101]"
           />
           <TeachingCard
             title="Stories of the Prophets"
-            style="border-[#0802A3] mx-3  my-3 md:my-0 rounded-md border-[1px] h-48 w-40 md:w-80 flex items-center justify-center hover:bg-[#FF4B91]"
+            style="border-[#0802A3] mx-3  my-3 md:my-0 rounded-md border-[1px] h-48 w-40 md:w-80 flex items-center justify-center hover:bg-[#FF4B91]  hover:text-white"
             textStyle="text-center hover:text-white font-[700] text-[#4F0101]"
           />
           <TeachingCard
             title="Stories of the Companions"
-            style="lg:hidden block border-[#0802A3] mx-3  my-4 md:my-0 rounded-md border-[1px] h-48 w-40 md:w-80 flex items-center justify-center hover:bg-[#FFCD4B]"
+            style="lg:hidden block border-[#0802A3] mx-3  my-4 md:my-0 rounded-md border-[1px] h-48 w-40 md:w-80 flex items-center justify-center hover:bg-[#FFCD4B]  hover:text-white"
             textStyle=" text-center hover:text-white font-[700] text-[#4F0101]"
           />
         </div>

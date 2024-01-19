@@ -38,15 +38,18 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="hidden sm:flex gap-6">
-            <Button
-              style="border-[#0802A3] border rounded-[8px] px-[10px] py-[8px] text-[#0802A3]"
-              text="Sign Up"
-            />
-            <Button
-              onClick={handleNav}
-              style="bg-[#0802A3] border rounded-[8px] px-[15px]  py-[8px] text-white"
-              text="Log In"
-            />
+            <Link href="/register">
+              <Button
+                style="border-[#0802A3] border rounded-[8px] px-[10px] py-[8px] text-[#0802A3]"
+                text="Sign Up"
+              />
+            </Link>
+            <Link href="/login">
+              <Button
+                style="bg-[#0802A3] border rounded-[8px] px-[15px]  py-[8px] text-white"
+                text="Log In"
+              />
+            </Link>
           </div>
           <div onClick={handleNav} className="h-8 w-8 md:hidden cursor-pointer">
             {menuOpen ? (
@@ -96,10 +99,10 @@ const Navbar = () => {
               <Link href="/about">
                 <li className="list-none">About Us</li>
               </Link>
-              <Link href="/">
+              <Link href="/register">
                 <li className="list-none">Sign Up</li>
               </Link>
-              <Link href="/">
+              <Link href="/login">
                 <li className="list-none">Log In</li>
               </Link>
             </div>
