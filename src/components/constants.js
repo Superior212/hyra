@@ -194,3 +194,88 @@ export const TeachingDetails = [
     },
 
 ] 
+
+
+export const teachingProps = [
+    {
+        title: "Pillars of Islam",
+        subtitle: "There are five Pillars of Islam",
+        listItems: [
+          "Shahadah",
+          "Salah",
+          "Zakah",
+          "Sawm",
+          "Hajj",
+        ],
+        imageUrl: "../../../../assets/images/islam.png",
+        altText: "mosque",
+      },
+      {
+        title: "Articles of Faith",
+        subtitle: "There are six Articles of Faith",
+        listItems: [
+          "Belief in the Oneness of Allah",
+          "Belief in the Angels",
+          "Belief in the Prophets",
+          "Belief in the Holy Book",
+          "Belief in the Day of Judgement",
+          "Belief in Destiny (Qadar)",
+        ],
+        imageUrl: "../../../../assets/images/faith.png",
+        altText: "mosque",
+      },
+      {
+        title: "Stories of the Prophet",
+        subtitle: "There are five Pillars of Islam",
+        listItems: [
+          "Shahadah",
+          "Salah",
+          "Zakah",
+          "Sawm",
+          "Hajj",
+        ],
+        imageUrl: "../../../../assets/images/islam.png",
+        altText: "mosque",
+      },
+      {
+        title: "Stories of the Companions",
+        subtitle: "There are six Articles of Faith",
+        listItems: [
+          "Belief in the Oneness of Allah",
+          "Belief in the Angels",
+          "Belief in the Prophets",
+          "Belief in the Holy Book",
+          "Belief in the Day of Judgement",
+          "Belief in Destiny (Qadar)",
+        ],
+        imageUrl: "../../../../assets/images/faith.png",
+        altText: "mosque",
+      },
+      {
+        title: "Du’a",
+        subtitle: "There are five Pillars of Islam",
+        listItems: [
+          "Shahadah",
+          "Salah",
+          "Zakah",
+          "Sawm",
+          "Hajj",
+        ],
+        imageUrl: "../../../../assets/images/islam.png",
+        altText: "mosque",
+      },
+      {
+    title: "Articles of Faith",
+    subtitle: "There are six Articles of Faith",
+    listItems: [
+      "Belief in the Oneness of Allah",
+      "Belief in the Angels",
+      "Belief in the Prophets",
+      "Belief in the Holy Book",
+      "Belief in the Day of Judgement",
+      "Belief in Destiny (Qadar)",
+    ],
+    imageUrl: "../../../../assets/images/faith.png",
+    altText: "mosque",
+  }
+]
