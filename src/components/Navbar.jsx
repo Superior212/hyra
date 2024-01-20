@@ -1,16 +1,67 @@
 "use client";
 import Link from "next/link";
 import Button from "./Button";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const handleNav = () => {
     setMenuOpen(!menuOpen);
   };
 
-  return (
+  const closeMobileMenu = () => {
+    setMenuOpen(false);
+  };
+
+  const navLinks = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Our Teachings",
+      link: "/teachings",
+    },
+    {
+      name: "About Us",
+      link: "/about",
+    },
+  ];
+
+  const mobileNavLinks = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Our Teachings",
+      link: "/teachings",
+    },
+    {
+      name: "About Us",
+      link: "/about",
+    },
+    {
+      name: "Sign Up",
+      link: "/register",
+    },
+    {
+      name: "Log In",
+      link: "/login",
+    },
+  ];
+
+  const shouldRenderNavbar =
+    pathname !== "/register" &&
+    pathname !== "/login" &&
+    pathname !== "/forgot-password" &&
+    pathname !== "/forgot-password/new-password" &&
+    pathname !== "/forgot-password/reset-password";
+
+  return shouldRenderNavbar ? (
     <>
       <nav className="fixed top-0 w-full h-24 z-10 bg-white">
         <div className="flex justify-between items-center h-full w-full px-10 2xl:px-16">
@@ -20,22 +71,21 @@ const Navbar = () => {
             </Link>
           </div>
           <div>
-            <ul
-              className="items-center justify-between gap-10 hidden
-                         sm:flex">
-              <Link href="/">
-                <li className="hover:border-b border-[#0802A3]">Home</li>
-              </Link>
-
-              <Link href="/teachings">
-                <li className="hover:border-b border-[#0802a3]">
-                  Our Teachings
-                </li>
-              </Link>
-              <Link href="/about">
-                <li className="hover:border-b border-[#0802A3]">About Us</li>
-              </Link>
-            </ul>
+            <div className="sm:flex hidden items-center  justify-between gap-10">
+              {navLinks.map((link) => {
+                const isActive = pathname === link.link;
+                return (
+                  <Link
+                    className={
+                      isActive ? "text-[#0802A3] mr-3" : "text-black mr-5"
+                    }
+                    key={link.name}
+                    href={link.link}>
+                    {link.name}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
           <div className="hidden sm:flex gap-6">
             <Link href="/register">
@@ -81,6 +131,7 @@ const Navbar = () => {
             )}
           </div>
         </div>
+        {/* mobileNav */}
         <div
           className={
             menuOpen
@@ -89,28 +140,21 @@ const Navbar = () => {
           }>
           <div className="flex flex-col justify-between h-fit w-full">
             <div className="flex flex-col gap-10 text-white text-center font-[500]">
-              <Link href="/">
-                <li className="list-none">Home</li>
-              </Link>
-
-              <Link href="/teachings">
-                <li className="list-none">Our Teachings</li>
-              </Link>
-              <Link href="/about">
-                <li className="list-none">About Us</li>
-              </Link>
-              <Link href="/register">
-                <li className="list-none">Sign Up</li>
-              </Link>
-              <Link href="/login">
-                <li className="list-none">Log In</li>
-              </Link>
+              {mobileNavLinks.map((link) => (
+                <Link key={link.name} href={link.link}>
+                  <div
+                    onClick={closeMobileMenu}
+                    className="list-none cursor-pointer">
+                    {link.name}
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
       </nav>
     </>
-  );
+  ) : null;
 };
 
 export default Navbar;

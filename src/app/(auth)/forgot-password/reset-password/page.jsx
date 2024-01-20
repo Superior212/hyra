@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
-import forgotImg from "../../../assets/images/forgotImg.png";
+import forgotImg from "../../../../assets/images/forgotImg.png";
 import Button from "@/components/Button";
 
-
-const ForgotPassword = () => {
+const resetPassword = () => {
   return (
     <div className=" md:bg-white h-screen md:h-[75vh]">
       <main className="md:flex items-center justify-center ">
@@ -14,7 +13,8 @@ const ForgotPassword = () => {
 
             <form className="flex flex-col">
               <label htmlFor="password" className="mb-2 text-gray-700">
-                Enter your Email/Phone number
+                Enter Code sent to your Email/ <br />
+                Phone number
               </label>
               <div className="relative">
                 <input
@@ -25,8 +25,12 @@ const ForgotPassword = () => {
               </div>
 
               <Button
-                text="Send Code"
-                style="bg-[#FF7676] text-white  rounded-md py-2 px-4 focus:outline-none focus:shadow-outline-blue"
+                text="Recover Password"
+                style="bg-[#FF7676] text-white  rounded-md py-2 px-4 focus:outline-none focus:shadow-outline-[#FF7676]"
+              />
+              <Button
+                text="Resend Code"
+                style="border border-[#FF7676] text-[#FF7676] mt-4  rounded-md py-2 px-4 focus:outline-none focus:shadow-outline-[#FF7676]"
               />
             </form>
           </section>
@@ -44,4 +48,4 @@ const ForgotPassword = () => {
   );
 };
 
-export default ForgotPassword;
+export default resetPassword;
