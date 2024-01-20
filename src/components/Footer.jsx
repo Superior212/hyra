@@ -1,7 +1,7 @@
 import Image from "next/image";
-import playstore from "../assets/images/playstoreicon.png";
 import instagram from "../assets/images/instagramIcon.png";
 import whatsapp from "../assets/images/whatsappIcon.png";
+import playstore from "../assets/images/playstoreicon.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
