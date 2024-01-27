@@ -5,7 +5,7 @@ const Pillars = () => {
   const articlesOfFaithStyles = {
     containerClass: "p-4 md:h-[75vh]",
     titleClass: "text-center text-[#0802A3] font-bold text-2xl",
-    contentClass: "mt-4 mx-60",
+    contentClass: "md:mt-4 md:mx-60",
     subtitleClass: "text-[#0802A3] font-semibold text-lg ",
     paragraphClass: "mt-2 md:mt-5 ",
     listClass: "list-inside list-decimal mt-4 pl-4",

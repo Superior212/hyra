@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 const TeachingPage = ({
@@ -80,7 +79,7 @@ const TeachingPage = ({
         </div>
         {imageSrc2 && (
           <div className="md:w-1/2 md:order-2">
-            <Image src={imageSrc2} className={`${imageClass2}`} alt={title2} />
+            <Image src={imageSrc2} className={`${imageClass2}`} alt={title2  } />
           </div>
         )}
       </div>

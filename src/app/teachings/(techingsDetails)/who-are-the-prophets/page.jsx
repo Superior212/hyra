@@ -6,7 +6,7 @@ const WhoAreTheProphets = () => {
   const articlesOfFaithStyles = {
     containerClass: "p-4 md:h-fit",
     titleClass: "text-center text-[#FF4B91] font-bold text-2xl",
-    contentClass: "mt-4 mx-60 md:mx-10 lg:mx-20",
+    contentClass: "md:mt-4 md:mx-60  lg:mx-20",
     contentClass2: "mt-4 mx-0 md:mx-10 lg:mx-20",
     subtitleClass2: "text-[#FF4B91] font-semibold text-lg ",
     paragraphClass: "mt-2 md:mt-5 ",

@@ -5,6 +5,8 @@ import google from "../../../assets/images/google.png";
 import Button from "@/components/Button";
 import { useState } from "react";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
+import { signIn } from "next-auth/react";
+
 const Register = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -18,6 +20,7 @@ const Register = () => {
   const toggleConfirmPasswordVisibility = () => {
     setShowConfirmPassword((prev) => !prev);
   };
+
   return (
     <div className="bg-[#FFCD4B] md:bg-white">
       <h1 className="md:hidden text-center  p-10 font-[700] text-[20px]">
@@ -111,6 +114,7 @@ const Register = () => {
               />
 
               <Button
+                onClick={() => signIn("google")}
                 image={google}
                 text="Continue with google"
                 style="border border-[#FFCD4B] rounded-md flex flex-row-reverse items-center justify-center py-2 mt-5 px-4 focus:outline-none focus:shadow-outline-blue"
